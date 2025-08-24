@@ -1,0 +1,64 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadBDSMMask
+  name: KigurumiPanda helmet
+  description: KigurumiPanda helmet
+  components:
+  - type: Sprite
+    sprite: _Lust/Clothing/Uniforms/bdsm_suit.rsi
+    state: mask
+  - type: Clothing
+    sprite: _Lust/Clothing/Uniforms/bdsm_suit.rsi
+    equippedPrefix: mask
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - HeadTop
+    - HeadSide
+
+- type: entity
+  parent: [ClothingOuterBase, AllowSuitStorageClothing]
+  id: ClothingOuterZipBDSM
+  name: kigurumi panda
+  description: This suit makes you want to eat bamboo
+  components:
+  - type: Sprite
+    sprite: _Lust/Clothing/Uniforms/bdsm_suit.rsi
+    state: zip
+  - type: Clothing
+    sprite: _Lust/Clothing/Uniforms/bdsm_suit.rsi
+    equippedPrefix: zip
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadBDSMMask
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: Item
+    heldPrefix: zip
+
+- type: entity
+  parent: [ClothingOuterBase, AllowSuitStorageClothing]
+  id: ClothingOuterCutoutBDSM
+  name: kigurumi panda
+  description: This suit makes you want to eat bamboo
+  components:
+  - type: Sprite
+    sprite: _Lust/Clothing/Uniforms/bdsm_suit.rsi
+    state: cutout
+  - type: Clothing
+    sprite: _Lust/Clothing/Uniforms/bdsm_suit.rsi
+    equippedPrefix: cutout
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadBDSMMask
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: Item
+    heldPrefix: cutout
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - ClothMade
+    - NudeFull

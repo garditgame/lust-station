@@ -1,0 +1,48 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "sprites by discord-ghostea404",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "mask-equipped-HELMET",
+            "directions": 4
+        },
+        {
+            "name": "zip-equipped-OUTERCLOTHING",
+            "directions": 4
+        },
+        {
+            "name": "zip-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "zip-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "cutout-equipped-OUTERCLOTHING",
+            "directions": 4
+        },
+        {
+            "name": "cutout-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "cutout-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "mask"
+        },
+        {
+            "name": "zip"
+        },
+        {
+            "name": "cutout"
+        }
+    ]
+}
